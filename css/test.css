@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --text-color: #30363c;
+    --main-color: rgb(7, 161, 161);
+    --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --shadow-border: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    color: var(--text-color);
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+.nav {
+    box-shadow: lightgray 0 0 5px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.nav > img {
+    margin: 7px 35px;
+    height: 40px;
+}
+.nav > img + div {
+    width: 1px;
+    background-color: grey;
+    height: 30px;
+    margin: auto 0;
+}
+#pick-address {
+    margin: auto 30px;
+}
+#pick-address > div {
+    display: flex;
+}
+#pick-address > div p {
+    font-size: 13px;
+}
+#pick-address > h4 {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline;
+}
+#pick-address > i {
+    font-size: 14px;
+    cursor: pointer;
+}
+.download-app {
+    cursor: pointer;
+    display: flex;
+    margin: 20px auto auto auto;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgb(226, 247, 255);
+}
+.download-app:hover {
+    background-color: rgb(200, 240, 255);
+}
+.download-app > p {
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.nav > ul {
+    margin: auto 20px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.nav > ul li,
+.nav > ul li a {
+    margin: 10px 15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav ul li p {
+    margin-left: 5px;
+    font-size: 14px;
+}
+.search-layout {
+    margin-top: 100px;
+}
+.search-layout > div {
+    width: 70%;
+    margin: 30px auto 0;
+}
+.search-header {
+    display: flex;
+    align-items: center;
+}
+.search-header > h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+.search-header > h2 + i {
+    margin-left: auto;
+    margin-right: 8px;
+}
+.search-header > p {
+    margin-right: 10px;
+}
+.search-header > div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.search-header > div > h3,
+.search-header > div > i {
+    color: var(--main-color);
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.search-bar {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    border: 1px lightgray solid;
+    border-radius: 40px;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: lightgray 0 0 4px;
+    align-items: center;
+}
+.search-bar > i {
+    margin-left: 30px;
+}
+.search-bar > input[type="text"] {
+    margin: auto 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+.search-bar>input[type="submit"] {
+    margin-left: auto;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+}
+.search-bar input::placeholder {
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+    padding: 40px 5%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.nav-card-layout > div {
+    display: flex;
+    grid-area: 40px;
+    text-align: center;
+    overflow: auto;
+    padding: 2px;
+}
+.nav-card-layout > div::-webikit-scrollbar {
+    display: none;
+}
+.nav-card-layout > div div {
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.nav-card-layout > div div:hover {
+    box-shadow: lightgray 0 0 6px;
+}
+.nav-card-layout > div img {
+    width: 90px;;
+}
+/* banner  */
+.banner::--webkit-scrollbar {
+    display: none;
+}
+.banner {
+    display: flex;
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.banner img {
+    width: 45%;
+    margin-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
